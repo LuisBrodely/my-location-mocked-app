@@ -12,14 +12,17 @@
       "resizeMode": "contain",
       "backgroundColor": "#ffffff"
     },
+    
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.brodely.mylocationapp"
     },
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./assets/images/adaptive-icon.png",
         "backgroundColor": "#ffffff"
-      }
+      },
+      "package": "com.brodely.mylocationapp"
     },
     "web": {
       "bundler": "metro",
@@ -27,7 +30,8 @@
       "favicon": "./assets/images/favicon.png"
     },
     "plugins": [
-      "expo-router"
+      "expo-router",
+      "expo-location"
     ],
     "experiments": {
       "typedRoutes": true
